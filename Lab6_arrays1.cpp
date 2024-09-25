@@ -6,7 +6,7 @@
 // and use cycle to sort them.
 
 #include <iostream>
-#include <cstdlib> // for rand
+#include <cstdlib> 
 #include <algorithm>
 #include <ctime>
 
