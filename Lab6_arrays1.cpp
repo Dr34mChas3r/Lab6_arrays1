@@ -3,7 +3,7 @@
 // Task: Write a program which sorts 10 elements 
 // of array from low to high element, and cout them
 // Idea: use srand() to generate 10 random elements
-// and use cycle to sort them.
+// and use std::sort (include algorithm) to sort them.
 
 #include <iostream>
 #include <cstdlib> 
