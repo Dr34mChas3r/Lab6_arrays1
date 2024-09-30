@@ -24,11 +24,15 @@ int main() {
 	int rand8 = rand() % 100001;
 	int rand9 = rand() % 100001;
 	int rand10 = rand() % 100001;
-
-	cout << rand1 << " " << rand2 << " " << rand3 << " " << rand4 << " " << rand5 << " " << rand6 << " " << rand7 << " " << rand8 << " " << rand9 << " " << rand10 << " " << endl;
+	int myArray[10]{ rand1, rand2, rand3, rand4, rand5, rand6, rand7, rand8, rand9, rand10 };
+	cout << "Random generated numbers :" << endl;
+	for (int i = 0; i < 10; i++) {
+		cout << myArray[i] << " ";
+	}
+	cout << endl;
 	cout << "Sorted array: " << endl;
-	int myArray[]{ rand1, rand2, rand3, rand4, rand5, rand6, rand7, rand8, rand9, rand10 };
-	sort(begin(myArray), end(myArray));
-	cout << myArray[0] << " " << myArray[1] << " " << myArray[2] << " " << myArray[3] << " " << myArray[4] << " " << myArray[5] << " " << myArray[6] << " " << myArray[7] << " " << myArray[8] << " " << myArray[9] << " ";
-
+	sort(begin(myArray), end(myArray)); 
+	for (int i = 0; i < 10; i++) {
+		cout << myArray[i] << " " ;
+	}
 }
