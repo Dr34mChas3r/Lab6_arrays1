@@ -18,8 +18,9 @@ int main() {
 	cout << "Enter 10 elements: " << endl;
 	cin >> arr[10];
 	for (i = 0; i < 10; i++) {
-		if (arr[i] > arr[i+1]) {
-			// make lab6, looks easy but need to think)
+		if (arr[i] > arr[i + 1]) {
+		arr[i] = arr[i + 1];
+		arr[i + 1] = currentNumber;
 	}
 	cout << currentNumber << " ";
 	}
