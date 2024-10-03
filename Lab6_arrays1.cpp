@@ -1,27 +1,33 @@
-// Write a program which sorts 10 elements from array
-// in ascending order
-// Idea: use cin to enter 10 array elements
-// And use cycles to cout, sort.
+//example cin 10 9 8 7 6 5 4 3 2 1 
+//example cout 1 2 3 4 5 6 7 8 9 10
 
-// Use gap between numbers, to cin them;
-// Example:
-// cin 10 3 7 6 12 4 3 1 2 3 ;
-// cout 1 2 3 3 3 4 6 7 10 12 ;
 #include <iostream>
-
 using namespace std;
 
 int main() {
-	int i;
-	int arr[10];
-	int currentNumber = arr[0];
-	cout << "Enter 10 elements: " << endl;
-	cin >> arr[10];
-	for (i = 0; i < 10; i++) {
-		if (arr[i] > arr[i+1]) {
-			// make lab6, looks easy but need to think)
-	}
-	cout << currentNumber << " ";
-	}
+    int i, n;
+    int arr[10];
+    int temp;
 
+    cout << "Enter 10 elements of an unsorted array: " << endl;
+    for (i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+  
+    for (i = 0; i < 10; i++) {
+        for (n = i + 1; n < 10; n++) {
+            if (arr[n] < arr[i]) {
+                temp = arr[i];
+                arr[i] = arr[n];
+                arr[n] = temp;
+            }
+        }
+    }
+
+    cout << "Sorted elements: " << endl;
+    for (i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
 }
